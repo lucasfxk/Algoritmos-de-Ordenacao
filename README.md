@@ -1,2 +1,2 @@
-# Algoritmos-de-Ordena-o
+# Algoritmos-de-Ordenação
 Trabalho Estrutura de Dados
