@@ -1,0 +1,77 @@
+# depslib dependency file v1.0
+1738626431 source:c:\users\usuario\desktop\estrutura de dados ii\trabalho 1\trabalho\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"bolha.h"
+	"bolhaParada.h"
+	"insercaoDireta.h"
+	"insercaoBinaria.h"
+	"shellsort.h"
+	"selecaoDireta.h"
+	"heapsort.h"
+	"quicksort.h"
+
+1738615053 source:c:\users\usuario\desktop\estrutura de dados ii\trabalho 1\trabalho\bolhaparada.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"bolhaParada.h"
+
+1737594949 source:c:\users\usuario\desktop\estrutura de dados ii\trabalho 1\trabalho\bucketsort.c
+
+1738689587 source:c:\users\usuario\desktop\estrutura de dados ii\trabalho 1\trabalho\heapsort.c
+	<stdio.h>
+	<stdlib.h>
+	"heapsort.h"
+
+1738624182 source:c:\users\usuario\desktop\estrutura de dados ii\trabalho 1\trabalho\insercaobinaria.c
+	<stdio.h>
+	<stdlib.h>
+	"insercaoBinaria.h"
+
+1738622125 source:c:\users\usuario\desktop\estrutura de dados ii\trabalho 1\trabalho\insercaodireta.c
+	<stdio.h>
+	<stdlib.h>
+	"insercaoDireta.h"
+
+1737594859 source:c:\users\usuario\desktop\estrutura de dados ii\trabalho 1\trabalho\mergesort.c
+
+1738193222 source:c:\users\usuario\desktop\estrutura de dados ii\trabalho 1\trabalho\quicksort.c
+	<stdio.h>
+	<stdlib.h>
+	"quicksort.h"
+
+1737594902 source:c:\users\usuario\desktop\estrutura de dados ii\trabalho 1\trabalho\radixsort.c
+
+1738625631 source:c:\users\usuario\desktop\estrutura de dados ii\trabalho 1\trabalho\selecaodireta.c
+	<stdio.h>
+	<stdlib.h>
+	"selecaoDireta.h"
+
+1738624987 source:c:\users\usuario\desktop\estrutura de dados ii\trabalho 1\trabalho\shellsort.c
+	<stdio.h>
+	<stdlib.h>
+	"shellsort.h"
+
+1738615006 c:\users\usuario\desktop\estrutura de dados ii\trabalho 1\trabalho\bolha.h
+
+1738615006 source:c:\users\usuario\desktop\estrutura de dados ii\trabalho 1\trabalho\bolha.c
+	<stdio.h>
+	<stdlib.h>
+	"bolha.h"
+
+1738615006 c:\users\usuario\desktop\estrutura de dados ii\trabalho 1\trabalho\bolhaparada.h
+
+1738615861 c:\users\usuario\desktop\estrutura de dados ii\trabalho 1\trabalho\insercaodireta.h
+
+1738625295 c:\users\usuario\desktop\estrutura de dados ii\trabalho 1\trabalho\selecaodireta.h
+
+1738624171 c:\users\usuario\desktop\estrutura de dados ii\trabalho 1\trabalho\insercaobinaria.h
+
+1738624853 c:\users\usuario\desktop\estrutura de dados ii\trabalho 1\trabalho\shellsort.h
+
+1738626452 c:\users\usuario\desktop\estrutura de dados ii\trabalho 1\trabalho\heapsort.h
+
+1738193288 c:\users\usuario\desktop\estrutura de dados ii\trabalho 1\trabalho\quicksort.h
+
