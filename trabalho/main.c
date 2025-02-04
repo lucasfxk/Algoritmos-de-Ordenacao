@@ -10,12 +10,20 @@
 #include "selecaoDireta.h"
 #include "heapsort.h"
 #include "quicksort.h"
-#include "mergemod.h"
+#include "mergesort.h"
 #include "radixsort.h"
 #include "bucketsort.h"
+#include "geradorSequencia.h"
 
 int main()
 {
+    FILE *file = fopen ("saida.txt", "w");
+
+    if(file == NULL){
+        printf("Erro ao abrir o arquivo!\n");
+        return 1;
+    }
+
     clock_t start, end;
     int contador;
     int trocas;
@@ -161,12 +169,21 @@ int main()
     }
 
     for(i=0;i<numeros;i++){
+        fprintf(file, "%d\n", vetor[i]);
+    }
+
+    for(i=0;i<numeros;i++){
         printf("%d\n", vetor[i]);
     }
 
+    printf("\n");
     printf("TEMPO DE EXECUCAO: %.5f\n",((double) (end - start)) / CLOCKS_PER_SEC);
     printf("COMPARACOES: %d\n", contador);
     printf("TROCAS: %d\n,",trocas);
+
+
+    fclose(file);
+
 
 return 0;
 }
