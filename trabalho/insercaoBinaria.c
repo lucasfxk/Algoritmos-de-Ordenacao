@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "insercaoBinaria.h"
 
-void ordenarInsercaoBinaria(int tamanhi, int *vetor, int *comparacoes, int *trocas){
+void ordenarInsercaoBinaria(int tamanho, int *vetor, int *comparacoes, int *trocas){
     int aux=0,esq=0,dir=0,meio=0;
 
     //Ordenação

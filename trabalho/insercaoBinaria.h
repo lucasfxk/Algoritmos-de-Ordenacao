@@ -2,7 +2,6 @@
 #define INSERCAOBINARIA_H_INCLUDED
 
 void ordenarInsercaoBinaria(int n, int vet[], int *contador, int *trocas);
-//int buscaBinaria(int vet[], int ini, int fim, int valor, int *contador);
 
 
 

@@ -2,31 +2,30 @@
 #include <stdlib.h>
 #include "shellsort.h"
 
-//peguei o código da internet (Vídeo do professor Marcelo)
+void ordenarShellSort(int tamanho, int *vetor, int *comparacoes, int *trocas){
+    int aux=0,gap=tamanho/2,i=0,j=0,cont=1;
 
-void ordenarShellSort(int n, int vet[], int *contador, int *trocas){
-    int i, j, h, aux;
-    h=1;
-    while(h<n){
-        (*contador)++;
-        h=h*3+1;
-    }
-    while(h>1){
-        (*contador)++;
-        h=h/3;
-
-        for(i=h;i<n;i++){
-            (*contador)++;
-            aux=vet[i];
-            j=i-h;
-            while(j>=0 && aux<vet[j]){
-                    (*contador)++;
+    //Ordenação
+    while(gap>0){
+        for(int x=gap;x<tamanho;x++){
+            j = x;
+            i = j - gap;
+            cont=1;
+            while((i>=0)&&(cont>0)){
+                cont=0;
+                (*comparacoes)++;
+                if(vetor[i]>vetor[j]){
                     (*trocas)++;
-                    vet[j+h]=vet[j];
-                    j=j-h;
+                    aux = vetor[j];
+                    vetor[j] = vetor[i];
+                    vetor[i] = aux;
+                    cont++;
+                }
+                j = i;
+                i = j - gap;
             }
-            vet[j+h]=aux;
         }
+        gap = gap/2;
     }
 }
 

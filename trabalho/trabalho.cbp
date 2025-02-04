@@ -43,6 +43,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="bucketsort.h" />
+		<Unit filename="geradorSequencia.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="geradorSequencia.h" />
 		<Unit filename="heapsort.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -62,10 +66,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="mergesort.h" />
-		<Unit filename="quicksort.c">
+		<Unit filename="quicksortIni.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="quicksort.h" />
+		<Unit filename="quicksortIni.h" />
 		<Unit filename="radixsort.c">
 			<Option compilerVar="CC" />
 		</Unit>

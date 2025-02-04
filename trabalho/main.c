@@ -9,8 +9,8 @@
 #include "shellsort.h"
 #include "selecaoDireta.h"
 #include "heapsort.h"
-#include "quicksort.h"
-#include "mergemod.h"
+#include "quicksortIni.h"
+#include "mergesort.h"
 #include "radixsort.h"
 #include "bucketsort.h"
 
