@@ -13,13 +13,21 @@
 #include "mergesort.h"
 #include "radixsort.h"
 #include "bucketsort.h"
+#include "geradorSequencia.h"
 
 int main()
 {
+    FILE *file = fopen ("saida.txt", "w");
+
+    if(file == NULL){
+        printf("Erro ao abrir o arquivo!\n");
+        return 1;
+    }
+
     clock_t start, end;
-    int contador;
-    int trocas;
-    int numeros, i;
+    int contador=0;
+    int trocas=0;
+    int numeros=0, i;
     int caso;
 
     printf ("Quantos numeros voce gostaria de gerar? ");
@@ -49,124 +57,98 @@ int main()
     printf("5-ShellSort\n");
     printf("6-Selecao Direta\n");
     printf("7-HeapSort\n");
-    printf("8-QuickSort\n");
-    printf("9-MergeSort\n");
-    printf("10-RadixSort\n");
-    printf("11-BucketSort\n");
+    printf("8-QuickSort (inicial)\n");
+    printf("9-QuickSort (meio)\n");
+    printf("10-QuickSort (mediana)\n");
+    printf("11-MergeSort\n");
+    printf("12-RadixSort\n");
+    printf("13-BucketSort\n");
+    printf("Escolha: ");
     scanf("%d",&metodo);
 
-    while(metodo<1 || metodo>11){
-        printf("Opcao Invalida! Digite novamente: \n");
+    while(metodo<1 || metodo>13){
+        printf("Opcao Invalida!\nDigite novamente: ");
         scanf("%d",&metodo);
     }
 
+    start = clock();//começa a contar o tempo
     switch(metodo){
         case 1:
-            contador=0;
-            trocas=0;
-            printf("\n");
-            printf("Ordenacao Bolha: \n");
-            start = clock();
+            printf("\nOrdenacao Bolha: \n");
             ordenarBolha(numeros,vetor,&contador,&trocas);
-            end = clock();
-
             break;
 
         case 2:
-            contador=0;
-            trocas=0;
-            printf("\n");
-            printf("Ordenacao Bolha com criterio de parada: \n");
-            start = clock();
+            printf("\nOrdenacao Bolha com criterio de parada: \n");
             ordenarBolhaParada(numeros,vetor,&contador,&trocas);
-            end = clock();
-
             break;
 
         case 3:
-            contador=0;
-            trocas=0;
-            printf("\n");
-            printf("Ordenacao Insercao Direta: \n");
-            start = clock();
+            printf("\nOrdenacao Insercao Direta: \n");
             ordenarInsercaoDireta(numeros,vetor,&contador,&trocas);
-            end = clock();
-
             break;
 
         case 4:
-            contador=0;
-            trocas=0;
-            printf("\n");
-            printf("Ordenacao Insersao Binaria: \n");
-            start = clock();
+            printf("\nOrdenacao Insersao Binaria: \n");
             ordenarInsercaoBinaria(numeros,vetor,&contador,&trocas);
-            end = clock();
-
             break;
 
         case 5:
-            contador=0;
-            trocas=0;
-            printf("\n");
-            printf("Ordenacao ShellSort: \n");
-            start = clock();
+            printf("\nOrdenacao ShellSort: \n");
             ordenarShellSort(numeros,vetor,&contador,&trocas);
-            end = clock();
-
             break;
 
         case 6:
-            contador=0;
-            trocas=0;
-            printf("\n");
-            printf("Ordenacao Selecao Direta: \n");
-            start = clock();
+            printf("\nOrdenacao Selecao Direta: \n");
             ordenarSelecaoDireta(numeros,vetor,&contador,&trocas);
-            end = clock();
-
             break;
 
         case 7:
-            contador=0;
-            trocas=0;
-            printf("\n");
-            printf("Ordenacao HeapSort: \n");
-            start = clock();
+            printf("\nOrdenacao HeapSort: \n");
             ordenarHeapsort(numeros,vetor,&contador,&trocas);
-            end = clock();
-
             break;
 
         case 8:
-            printf("\n");
-            printf("Ordenacao QuickSort Inicio: \n");
-            start = clock();
-            ordenarQuickSortIni(vetor,0,numeros-1);
-            end = clock();
-
+            printf("\nOrdenacao QuickSort Inicio: \n");
+            ordenarQuickSortIni(vetor,numeros,&contador,&trocas);
             break;
 
         case 9:
 
-        break;
+            break;
 
         case 10:
 
-        break;
+            break;
 
         case 11:
 
-        break;
+            break;
+        case 12:
+
+            break;
+        case 13:
+
+            break;
+    }
+    end = clock();
+
+    for(i=0;i<numeros;i++){
+        fprintf(file, "%d\n", vetor[i]);
     }
 
     for(i=0;i<numeros;i++){
         printf("%d\n", vetor[i]);
     }
 
+    printf("\n");
     printf("TEMPO DE EXECUCAO: %.5f\n",((double) (end - start)) / CLOCKS_PER_SEC);
     printf("COMPARACOES: %d\n", contador);
-    printf("TROCAS: %d\n,",trocas);
+    printf("TROCAS: %d\n",trocas);
+
+
+    fclose(file);
+
 
 return 0;
 }

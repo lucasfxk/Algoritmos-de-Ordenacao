@@ -113,7 +113,7 @@
 
 1738694081 c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\insercaodireta.h
 
-1738693985 source:c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\main.c
+1738724357 source:c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -124,10 +124,11 @@
 	"shellsort.h"
 	"selecaoDireta.h"
 	"heapsort.h"
-	"quicksort.h"
+	"quicksortIni.h"
 	"mergesort.h"
 	"radixsort.h"
 	"bucketsort.h"
+	"geradorSequencia.h"
 
 1738694101 c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\shellsort.h
 
@@ -149,7 +150,7 @@
 	<stdlib.h>
 	"selecaoDireta.h"
 
-1738694049 source:c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\shellsort.c
+1738694957 source:c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\shellsort.c
 	<stdio.h>
 	<stdlib.h>
 	"shellsort.h"
@@ -160,7 +161,17 @@
 
 1738694068 c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\bucketsort.h
 
-1738694371 source:c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\geradorsequencia.c
+1738724582 source:c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\geradorsequencia.c
 	<stdio.h>
 	<stdlib.h>
+	"geradorSequencia.h"
+
+1738723875 c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\quicksortini.h
+
+1738694371 c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\geradorsequencia.h
+
+1738723953 source:c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\quicksortini.c
+	<stdio.h>
+	<stdlib.h>
+	"quicksortIni.h"
 
