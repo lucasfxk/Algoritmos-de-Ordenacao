@@ -113,7 +113,7 @@
 
 1738694081 c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\insercaodireta.h
 
-1738724357 source:c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\main.c
+1738726129 source:c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -125,6 +125,7 @@
 	"selecaoDireta.h"
 	"heapsort.h"
 	"quicksortIni.h"
+	"quicksortCentro.h"
 	"mergesort.h"
 	"radixsort.h"
 	"bucketsort.h"
@@ -170,8 +171,15 @@
 
 1738694371 c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\geradorsequencia.h
 
-1738723953 source:c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\quicksortini.c
+1738726209 source:c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\quicksortini.c
 	<stdio.h>
 	<stdlib.h>
 	"quicksortIni.h"
+
+1738726129 c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\quicksortcentro.h
+
+1738726209 source:c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\quicksortcentro.c
+	<stdlib.h>
+	<stdio.h>
+	"quicksortCentro.h"
 

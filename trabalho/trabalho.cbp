@@ -66,6 +66,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="mergesort.h" />
+		<Unit filename="quicksortCentro.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="quicksortCentro.h" />
 		<Unit filename="quicksortIni.c">
 			<Option compilerVar="CC" />
 		</Unit>

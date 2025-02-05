@@ -10,6 +10,7 @@
 #include "selecaoDireta.h"
 #include "heapsort.h"
 #include "quicksortIni.h"
+#include "quicksortCentro.h"
 #include "mergesort.h"
 #include "radixsort.h"
 #include "bucketsort.h"
@@ -114,7 +115,8 @@ int main()
             break;
 
         case 9:
-
+            printf("\nOrdenacao QuickSort Centro: \n");
+            ordenarQuickSortIni(vetor,numeros,&contador,&trocas);
             break;
 
         case 10:
@@ -134,11 +136,8 @@ int main()
     end = clock();
 
     for(i=0;i<numeros;i++){
+        printf("%d\n", vetor[i]);//apagar
         fprintf(file, "%d\n", vetor[i]);
-    }
-
-    for(i=0;i<numeros;i++){
-        printf("%d\n", vetor[i]);
     }
 
     printf("\n");

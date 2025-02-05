@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "quicksortIni.h"
 
-void quicksort(int *vetor,int inicio, int fim, int *comparacao,int *trocas){
+void quicksortInicio(int *vetor,int inicio, int fim, int *comparacao,int *trocas){
     if((fim-inicio)>=1){
         int i=fim,j=fim+1,aux=0,pivo=vetor[inicio];
         for(;i>=inicio;i--){
@@ -17,15 +17,15 @@ void quicksort(int *vetor,int inicio, int fim, int *comparacao,int *trocas){
                 }
             }
         }
-        quicksort(vetor,inicio,j-1,comparacao,trocas);
-        quicksort(vetor,j+1,fim,comparacao,trocas);
+        quicksortInicio(vetor,inicio,j-1,comparacao,trocas);
+        quicksortInicio(vetor,j+1,fim,comparacao,trocas);
     }
 }
 
 
 void ordenarQuickSortIni(int *vetor, int tamanho, int *contador, int *trocas){
     //Ordenação
-    quicksort(vetor,0,tamanho-1,contador,trocas);
+    quicksortInicio(vetor,0,tamanho-1,contador,trocas);
 }
 
 
