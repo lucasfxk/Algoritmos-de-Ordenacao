@@ -120,17 +120,21 @@ int main()
             break;
 
         case 10:
-
+            printf("\nOrdenacao QuickSort Mediana: \n");
+            ordenarQuickSortMediana(vetor,numeros,&contador,&trocas);
             break;
 
         case 11:
-
+            printf("\nOrdenacao MergeSort: \n");
+            ordenarMergeSort(vetor,numeros,&contador,&trocas);
             break;
         case 12:
-
+            printf("\nOrdenacao RadixSort: \n");
+            ordenarRadixSort(vetor,numeros,&contador,&trocas);
             break;
         case 13:
-
+            printf("\nOrdenacao BucketSort: \n");
+            ordenarBucketSort(vetor,numeros,&contador,&trocas);
             break;
     }
     end = clock();

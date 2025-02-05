@@ -90,7 +90,10 @@
 
 1738694064 c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\bolhaparada.h
 
-1738694002 source:c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\bucketsort.c
+1738759516 source:c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\bucketsort.c
+	<stdio.h>
+	<stdlib.h>
+	"bucketsort.h"
 
 1738694008 source:c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\heapsort.c
 	<stdio.h>
@@ -113,7 +116,7 @@
 
 1738694081 c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\insercaodireta.h
 
-1738726129 source:c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\main.c
+1738759516 source:c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -137,14 +140,20 @@
 
 1738694089 c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\quicksort.h
 
-1738694028 source:c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\mergesort.c
+1738756682 source:c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\mergesort.c
+	<stdlib.h>
+	<stdio.h>
+	"mergesort.h"
 
 1738694033 source:c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\quicksort.c
 	<stdio.h>
 	<stdlib.h>
 	"quicksort.h"
 
-1738694038 source:c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\radixsort.c
+1738757328 source:c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\radixsort.c
+	<stdio.h>
+	<stdlib.h>
+	"radixsort.h"
 
 1738694041 source:c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\selecaodireta.c
 	<stdio.h>
@@ -156,11 +165,11 @@
 	<stdlib.h>
 	"shellsort.h"
 
-1738694085 c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\mergesort.h
+1738756692 c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\mergesort.h
 
-1738694093 c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\radixsort.h
+1738757246 c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\radixsort.h
 
-1738694068 c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\bucketsort.h
+1738757761 c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\bucketsort.h
 
 1738724582 source:c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\geradorsequencia.c
 	<stdio.h>
@@ -182,4 +191,11 @@
 	<stdlib.h>
 	<stdio.h>
 	"quicksortCentro.h"
+
+1738757920 source:c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\quicksortmediana.c
+	<stdlib.h>
+	<stdio.h>
+	"quicksortMediana.h"
+
+1738756127 c:\users\lucas\documents\c_projects\trabalhoed2\algoritmos-de-ordenacao\trabalho\quicksortmediana.h
 
