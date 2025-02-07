@@ -3,14 +3,20 @@
 #include <stdbool.h>
 #include "bolhaParada.h"
 
-void ordenarBolhaParada(int n, int vet[], int *cont, int *troca){
-    int i, j, troc;
+void ordenarBolhaParada(int n, int vet[], long long int *cont, long long int *troca){
+    int j, troc;
     bool mudou = true;
 
-    for(i=n-1;i>0;i--){
-        while(mudou){
+    int ultimo=n-1;
+    int novoultimo;
+
+    //Verificação da quantidade de trocas (se não houve, então o algoritmo encerra)
+    while(mudou){
+            novoultimo=0;
             mudou = false;
-            for(j=0;j<i;j++){
+
+            //Algoritmo padrão do Bolha
+            for(j=0;j<ultimo;j++){
                 (*cont)++;
                 if(vet[j]>vet[j+1]){
                     (*troca)++;
@@ -18,8 +24,9 @@ void ordenarBolhaParada(int n, int vet[], int *cont, int *troca){
                     troc=vet[j+1];
                     vet[j+1]=vet[j];
                     vet[j]=troc;
+                    novoultimo = j;
                 }
             }
-        }
+        ultimo = novoultimo;
     }
 }

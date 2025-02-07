@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "insercaoBinaria.h"
 
-void ordenarInsercaoBinaria(int tamanho, int *vetor, int *comparacoes, int *trocas){
+void ordenarInsercaoBinaria(int tamanho, int *vetor, long long int *comparacoes, long long int *trocas){
     int aux=0,esq=0,dir=0,meio=0;
 
     //Ordenação
@@ -10,16 +10,19 @@ void ordenarInsercaoBinaria(int tamanho, int *vetor, int *comparacoes, int *troc
         aux = vetor[x];
         esq = 0;
         dir = x;
-        (*comparacoes)++;
+
+        //Procura - de forma binária- a posição do valor i no vetor antecessor a ele
         while(esq<dir){
-            (*comparacoes)++;
             meio = (esq+dir)/2;
+            (*comparacoes)++;
             if(vetor[meio]<=aux){
                 esq = meio+1;
             }else{
                 dir = meio;
             }
         }
+
+        //Transloca o valor i até a sua respectiva posição
         for(int y=x;y>esq;y--){
             vetor[y] = vetor[y-1];
             (*trocas)++;

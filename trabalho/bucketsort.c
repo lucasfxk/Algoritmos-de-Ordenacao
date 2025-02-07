@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "bucketsort.h"
 
-void quicksortBalde(int *vetor,int inicio, int fim, int *comparacao, int *trocas){
+void quicksortBalde(int *vetor,int inicio, int fim, long long int *comparacao, long long int *trocas){
     if(fim-inicio>=1){
         int l=inicio, r=fim, pivo=(inicio+fim)/2, aux=0;
 
@@ -39,7 +39,7 @@ int maior(int* vetor,int tamanho){
     return maximo;
 }
 
-void ordenarBucketSort(int* vetor,int tamanho,int *comparacoes,int *trocas){
+void ordenarBucketSort(int* vetor,int tamanho,long long int *comparacoes,long long int *trocas){
     int temp[tamanho],numBaldes=10,tabela[/**Quantidade de baldes:*/10]={0},tabelaIniFim[numBaldes][2],baldeIndex = 0,maximo = maior(vetor,tamanho);
 
     //Ordenação
@@ -53,7 +53,6 @@ void ordenarBucketSort(int* vetor,int tamanho,int *comparacoes,int *trocas){
     }
 
     //Cria tabela inicio-fim dos baldes
-    int valorInicial = tabela[0];
     for(int x=0;x<numBaldes;x++){
         tabelaIniFim[x][1] = tabela[x];
     }
@@ -75,7 +74,7 @@ void ordenarBucketSort(int* vetor,int tamanho,int *comparacoes,int *trocas){
         vetor[x] = temp[x];
     }
 
-    //executa o quicksort nos baldes
+    //Executa o quicksort nos baldes
     for(int x=0;x<numBaldes;x++){
         quicksortBalde(vetor,tabelaIniFim[x][0],tabelaIniFim[x][1]-1,comparacoes,trocas);
     }

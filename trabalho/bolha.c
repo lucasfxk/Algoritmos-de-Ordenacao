@@ -2,9 +2,10 @@
 #include <stdlib.h>
 #include "bolha.h"
 
-void ordenarBolha(int n, int vet[], int *cont, int *troca){
+void ordenarBolha(int n, int vet[], long long int *cont, long long int *troca){
     int i, j, troc;
 
+    //Ordenação
     for(i=n-1;i>0;i--){
         for(j=0;j<i;j++){
             (*cont)++;

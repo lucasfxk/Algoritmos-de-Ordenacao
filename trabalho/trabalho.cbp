@@ -74,6 +74,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="quicksortIni.h" />
+		<Unit filename="quicksortMediana.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="quicksortMediana.h" />
 		<Unit filename="radixsort.c">
 			<Option compilerVar="CC" />
 		</Unit>

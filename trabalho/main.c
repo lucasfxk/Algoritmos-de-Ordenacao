@@ -16,8 +16,8 @@
 #include "bucketsort.h"
 #include "geradorSequencia.h"
 
-int main()
-{
+int main(){
+
     FILE *file = fopen ("saida.txt", "w");
 
     if(file == NULL){
@@ -26,20 +26,20 @@ int main()
     }
 
     clock_t start, end;
-    int contador=0;
-    int trocas=0;
+    long long int contador=0;
+    long long int trocas=0;
     int numeros=0, i;
-    int caso;
+    int caso=0;
 
-    printf ("Quantos numeros voce gostaria de gerar? ");
+    printf ("Quantos numeros voce gostaria de gerar?\n");
     scanf ("%d", &numeros);
 
     int vetor[numeros];
 
-    printf("Selecione a opcao desejada: \n");
-    printf ("1-Gerar numeros em ordem aleatoria\n");
-    printf ("2-Gerar numeros em ordem crescente\n");
-    printf ("3-Gerar numeros em ordem decrescente\n");
+    printf("\nSelecione a opcao desejada: \n");
+    printf ("1- Gerar numeros em ordem aleatoria\n");
+    printf ("2- Gerar numeros em ordem crescente\n");
+    printf ("3- Gerar numeros em ordem decrescente\n");
     scanf("%d", &caso);
 
     while (caso<1 || caso>3){
@@ -50,20 +50,20 @@ int main()
     geradorSequencia(caso, numeros, vetor);
 
     int metodo;
-    printf("Selecione o metodo de ordenacao desejado: \n");
-    printf("1-Bolha\n");
-    printf("2-Bolha com criterio de parada\n");
-    printf("3-Insersao Direta\n");
-    printf("4-Insercao Binaria\n");
-    printf("5-ShellSort\n");
-    printf("6-Selecao Direta\n");
-    printf("7-HeapSort\n");
-    printf("8-QuickSort (inicial)\n");
-    printf("9-QuickSort (meio)\n");
-    printf("10-QuickSort (mediana)\n");
-    printf("11-MergeSort\n");
-    printf("12-RadixSort\n");
-    printf("13-BucketSort\n");
+    printf("\nSelecione o metodo de ordenacao desejado: \n");
+    printf("1- Bolha\n");
+    printf("2- Bolha com criterio de parada\n");
+    printf("3- Insersao Direta\n");
+    printf("4- Insercao Binaria\n");
+    printf("5- ShellSort\n");
+    printf("6- Selecao Direta\n");
+    printf("7- HeapSort\n");
+    printf("8- QuickSort (inicial)\n");
+    printf("9- QuickSort (meio)\n");
+    printf("10- QuickSort (mediana)\n");
+    printf("11- MergeSort\n");
+    printf("12- RadixSort\n");
+    printf("13- BucketSort\n");
     printf("Escolha: ");
     scanf("%d",&metodo);
 
@@ -72,7 +72,7 @@ int main()
         scanf("%d",&metodo);
     }
 
-    start = clock();//começa a contar o tempo
+    start = clock();//começa a contagem de tempo
     switch(metodo){
         case 1:
             printf("\nOrdenacao Bolha: \n");
@@ -137,21 +137,19 @@ int main()
             ordenarBucketSort(vetor,numeros,&contador,&trocas);
             break;
     }
-    end = clock();
+    end = clock();//encerra a contagem de tempo
 
     for(i=0;i<numeros;i++){
-        printf("%d\n", vetor[i]);//apagar
         fprintf(file, "%d\n", vetor[i]);
     }
 
     printf("\n");
     printf("TEMPO DE EXECUCAO: %.5f\n",((double) (end - start)) / CLOCKS_PER_SEC);
-    printf("COMPARACOES: %d\n", contador);
-    printf("TROCAS: %d\n",trocas);
+    printf("COMPARACOES: %lli\n", contador);
+    printf("TROCAS: %lli\n",trocas);
 
 
     fclose(file);
 
-
-return 0;
+    return 0;
 }
